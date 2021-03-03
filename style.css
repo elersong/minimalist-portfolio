@@ -1,9 +1,13 @@
 :root {
-  --dust: rgb(240, 237, 194);
-  --textColor: black;
+  --dust: #f6f4f1;
+  --lightDust: #fbf8f4;
+  --textColor: #16161d;
   --commonText: "Roboto Slab";
   --subheadText: "Lato";
   --fancyheadText: "Didact Gothic";
+}
+.fab {
+  color: var(--textColor);
 }
 h1 {
   font-family: var(--subheadText), sans-serif;
@@ -24,7 +28,7 @@ h1 {
 body {
   margin: 0;
   height: 100vh;
-  background-color: #fff;
+  background-color: var(--dust);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,26 +84,26 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 0.5px solid #000;
+  border: 0.5px solid var(--textColor);
   position: relative;
-  
+
   overflow: hidden;
 }
 
 .item img {
-    position: absolute;
-    z-index: -1;
-    filter:blur(3px) grayscale(1);
-    height: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: blur(3px) grayscale(1);
+  height: 100%;
 }
 
 .item:nth-child(2) {
   margin-top: 5vh;
 }
 .title {
-  background-color: #000;
+  background-color: var(--textColor);
   font-size: 20px;
-  color: #fff;
+  color: var(--lightDust);
   font-family: var(--fancyheadText);
   margin: 40px 40px;
   height: fit-content;
@@ -107,9 +111,9 @@ li {
   padding: 0 10px 3px 10px;
 }
 #contactForm button {
-    background-color: #000;
+  background-color: var(--textColor);
   font-size: 20px;
-  color: #fff;
+  color: var(--lightDust);
   font-family: var(--fancyheadText);
   border: 0;
   padding: 3px 0;
@@ -120,18 +124,19 @@ li {
   flex-direction: column;
   justify-content: flex-start;
   height: fit-content;
+  background-color: var(--lightDust);
 }
 .description {
   align-self: flex-end;
   height: 25%;
   width: 100%;
-  background-color: #fff;
-  border-top: 0.5px solid #000;
+  background-color: var(--lightDust);
+  border-top: 0.5px solid var(--textColor);
 }
 
 #emailAdd {
-    font-family: var(--subheadText);
-    font-weight: bold;
+  font-family: var(--subheadText);
+  font-weight: bold;
 }
 
 #aboutMe h2,
@@ -168,7 +173,7 @@ li {
   margin-top: 0;
 }
 #quote {
-  color: #000;
+  color: var(--textColor);
   margin: 25px 25px;
   font-style: italic;
 }
@@ -191,12 +196,16 @@ li {
   font-family: var(--commonText);
   line-height: 1.5rem;
   padding: 5px;
+  background-color: var(--lightDust);
+  border-width: thin;
 }
 #contactForm textarea {
   font-family: var(--commonText);
   line-height: 1.5rem;
   height: 100px;
   padding: 5px;
+  background-color: var(--lightDust);
+  border-width: thin;
 }
 #contactForm button {
   max-width: 33%;
@@ -229,7 +238,7 @@ li {
   body {
     margin: 0;
     height: 100vh;
-    background-color: #fff;
+    background-color: var(--dust);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -282,15 +291,15 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 0.5px solid #000;
+    border: 0.5px solid var(--textColor);
   }
   .item:nth-child(2) {
     margin-top: 5vh;
   }
   .title {
-    background-color: #000;
+    background-color: var(--textColor);
     font-size: 20px;
-    color: #fff;
+    color: var(--lightDust);
     font-family: var(--fancyheadText);
     margin: 40px 40px;
     height: fit-content;
@@ -308,8 +317,8 @@ li {
     align-self: flex-end;
     height: 25%;
     width: 100%;
-    background-color: #fff;
-    border-top: 0.5px solid #000;
+    background-color: var(--lightDust);
+    border-top: 0.5px solid var(--textColor);
   }
   #aboutMe h2,
   .blog h2,
@@ -342,7 +351,7 @@ li {
     margin-top: 0;
   }
   #quote {
-    color: #000;
+    color: var(--textColor);
     margin: 25px 25px;
     font-style: italic;
   }
