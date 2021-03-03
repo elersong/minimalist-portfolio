@@ -81,7 +81,18 @@ li {
   flex-direction: column;
   justify-content: space-between;
   border: 0.5px solid #000;
+  position: relative;
+  
+  overflow: hidden;
 }
+
+.item img {
+    position: absolute;
+    z-index: -1;
+    filter:blur(3px) grayscale(1);
+    height: 100%;
+}
+
 .item:nth-child(2) {
   margin-top: 5vh;
 }
@@ -116,6 +127,11 @@ li {
   width: 100%;
   background-color: #fff;
   border-top: 0.5px solid #000;
+}
+
+#emailAdd {
+    font-family: var(--subheadText);
+    font-weight: bold;
 }
 
 #aboutMe h2,
