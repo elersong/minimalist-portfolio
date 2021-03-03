@@ -95,6 +95,14 @@ li {
   width: fit-content;
   padding: 0 10px 3px 10px;
 }
+#contactForm button {
+    background-color: #000;
+  font-size: 20px;
+  color: #fff;
+  font-family: var(--fancyheadText);
+  border: 0;
+  padding: 3px 0;
+}
 #aboutMe,
 .blog {
   display: flex;
