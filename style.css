@@ -1,0 +1,358 @@
+:root {
+  --dust: rgb(240, 237, 194);
+  --textColor: black;
+  --commonText: "Roboto Slab";
+  --subheadText: "Lato";
+  --fancyheadText: "Didact Gothic";
+}
+h1 {
+  font-family: var(--subheadText), sans-serif;
+  font-size: 24px;
+  margin: 0;
+}
+#logo a {
+  text-decoration: none;
+  color: var(--textColor);
+}
+#navList ul li a {
+  font-family: var(--subheadText), sans-serif;
+  font-size: 19px;
+  margin: 0;
+  text-decoration: none;
+  color: var(--textColor);
+}
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  margin-top: 10px;
+}
+#social {
+  display: none;
+}
+ul {
+  padding-inline-start: 0;
+}
+#navList ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-width: 330px;
+  margin-block-end: 0.5em;
+  margin-block-start: 0.25em;
+}
+#navList ul li {
+  margin: 5px 0;
+}
+main {
+  height: 100vh;
+  width: 90%;
+  min-width: 350px;
+  overflow-y: auto;
+}
+main::-webkit-scrollbar {
+  display: none;
+}
+li {
+  list-style: none;
+}
+#social ul {
+  display: flex;
+}
+#social ul li {
+  margin-left: 15px;
+}
+.item {
+  width: 99%;
+  height: 105vh;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 0.5px solid #000;
+}
+.item:nth-child(2) {
+  margin-top: 5vh;
+}
+.title {
+  background-color: #000;
+  font-size: 20px;
+  color: #fff;
+  font-family: var(--fancyheadText);
+  margin: 40px 40px;
+  height: fit-content;
+  width: fit-content;
+  padding: 0 10px 3px 10px;
+}
+#aboutMe,
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: fit-content;
+}
+.description {
+  align-self: flex-end;
+  height: 25%;
+  width: 100%;
+  background-color: #fff;
+  border-top: 0.5px solid #000;
+}
+
+#aboutMe h2,
+.blog h2,
+.description h2 {
+  font-family: var(--subheadText), sans-serif;
+  margin-left: 40px;
+}
+#quote + p {
+  font-size: 14px;
+  margin: 20px 0 0 0;
+}
+.intro {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+#aboutMe p,
+.blog p,
+.description p,
+.intro p {
+  font-family: var(--commonText), sans-serif;
+  margin: 25px;
+  font-style: italic;
+  line-height: 140%;
+  letter-spacing: 0.28px;
+  text-align: center;
+}
+#aboutMe p,
+.blog p {
+  text-align: left;
+  font-style: normal;
+  margin-left: 40px;
+  margin-top: 0;
+}
+#quote {
+  color: #000;
+  margin: 25px 25px;
+  font-style: italic;
+}
+#contactFormContainer {
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 5% 0;
+}
+#contactForm label {
+  font-family: var(--fancyheadText);
+  font-size: 1.2rem;
+}
+#contactForm input {
+  font-family: var(--commonText);
+  line-height: 1.5rem;
+  padding: 5px;
+}
+#contactForm textarea {
+  font-family: var(--commonText);
+  line-height: 1.5rem;
+  height: 100px;
+  padding: 5px;
+}
+#contactForm button {
+  max-width: 33%;
+  margin-top: 15px;
+}
+#contactForm * + * {
+  margin-top: 10px;
+}
+
+@media all and (min-width: 550px) {
+  #quote + p {
+    font-size: 16px;
+    margin: 25px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  h1 {
+    font-family: var(--subheadText), sans-serif;
+    font-size: 24px;
+    margin: 0;
+  }
+  #navList ul li a {
+    font-family: var(--subheadText), sans-serif;
+    font-size: 19px;
+    margin: 0;
+    text-decoration: none;
+    color: var(--textColor);
+  }
+  body {
+    margin: 0;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #social {
+    display: block;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 200px;
+    width: 250px;
+    margin-bottom: 200px;
+    margin-right: 50px;
+  }
+  nav div {
+    margin-bottom: 25px;
+  }
+  #navList ul {
+    text-align: right;
+    flex-direction: column;
+  }
+  #navList ul li {
+    margin: 5px 0;
+  }
+  main {
+    height: 100vh;
+    width: 700px;
+    overflow-y: auto;
+  }
+  main::-webkit-scrollbar {
+    display: none;
+  }
+  li {
+    list-style: none;
+  }
+  #social ul {
+    display: flex;
+  }
+  #social ul li {
+    margin-left: 15px;
+  }
+  .item {
+    width: 99%;
+    height: 105vh;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0.5px solid #000;
+  }
+  .item:nth-child(2) {
+    margin-top: 5vh;
+  }
+  .title {
+    background-color: #000;
+    font-size: 20px;
+    color: #fff;
+    font-family: var(--fancyheadText);
+    margin: 40px 40px;
+    height: fit-content;
+    width: fit-content;
+    padding: 0 10px 3px 10px;
+  }
+  #aboutMe,
+  .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: fit-content;
+  }
+  .description {
+    align-self: flex-end;
+    height: 25%;
+    width: 100%;
+    background-color: #fff;
+    border-top: 0.5px solid #000;
+  }
+  #aboutMe h2,
+  .blog h2,
+  .description h2 {
+    font-family: var(--subheadText), sans-serif;
+    margin-left: 40px;
+  }
+  .intro {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin-top: 5vh;
+  }
+  #aboutMe p,
+  .blog p,
+  .description p,
+  .intro p {
+    font-family: var(--commonText), sans-serif;
+    margin: 25px;
+    font-style: italic;
+    line-height: 140%;
+    letter-spacing: 0.28px;
+    text-align: center;
+  }
+  #aboutMe p,
+  .blog p {
+    text-align: left;
+    font-style: normal;
+    margin-left: 40px;
+    margin-top: 0;
+  }
+  #quote {
+    color: #000;
+    margin: 25px 25px;
+    font-style: italic;
+  }
+  #contactFormContainer {
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+  }
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 5% 0;
+  }
+  #contactForm label {
+    font-family: var(--fancyheadText);
+    font-size: 1.2rem;
+  }
+  #contactForm input {
+    font-family: var(--commonText);
+    line-height: 1.5rem;
+    padding: 5px;
+  }
+  #contactForm textarea {
+    font-family: var(--commonText);
+    line-height: 1.5rem;
+    height: 100px;
+    padding: 5px;
+  }
+  #contactForm button {
+    max-width: 33%;
+    margin-top: 15px;
+  }
+  #contactForm * + * {
+    margin-top: 10px;
+  }
+}
