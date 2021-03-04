@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -18,6 +18,7 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+    <title>Portfolio of Grey Elerson</title>
   </head>
   <body>
     <nav>
@@ -33,9 +34,9 @@
       <div id="social">
         <ul>
           <li><a href="https://www.linkedin.com/in/elersong/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
-          <li><a href="https://github.com/elersong" target="_blank"></a><i class="fab fa-github-square fa-lg"></i></a></li>
-          <li><a href="mailto:grey.l.elerson@gmail.com" target="_blank"></a><i class="fas fa-envelope-square fa-lg"></i></a></li>
-          <li><a href="https://www.meetup.com/members/51190832/" target="_blank"></a><i class="fab fa-meetup fa-lg"></i></a></li>
+          <li><a href="https://github.com/elersong" target="_blank"><i class="fab fa-github-square fa-lg"></i></a></li>
+          <li><a href="mailto:grey.l.elerson@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-lg"></i></a></li>
+          <li><a href="https://www.meetup.com/members/51190832/" target="_blank"><i class="fab fa-meetup fa-lg"></i></a></li>
         </ul>
       </div>
     </nav>
@@ -46,9 +47,9 @@
           I am a developer with 5+ years experience in the SaaS field,
           stretching end-to-end from product design and development to
           operations and support. I have contributed to projects for both
-          small-business and multi-national enterprises. I find elegance in
-          simplicity, and I bring that benefit to my clients and teams while
-          meeting modern standards, best practices and key performance goals.
+          small-businesses and multi-national enterprises. I find elegance in
+          simplicity, and I implement that mindset while adhering to best practices
+          and achieving key performance goals.
         </p>
       </div>
       <div class="item" id="firstProject">
@@ -141,15 +142,16 @@
       <div class="item" id="contactFormContainer">
         <form id="contactForm" action="https://formspree.io/f/xpzognzn" method="POST">
           <label for="name">Name</label>
-          <input name="name" type="text" />
+          <input id="name" name="name" type="text" />
 
           <label for="email">Email</label>
-          <input name="email" type="email" />
+          <input id="email" name="email" type="email" />
 
           <label for="message">Message</label>
           <textarea
             name="message"
             placeholder="Feel free to reach out"
+            id="message"
           ></textarea>
 
           <button type="submit">Send</button>
