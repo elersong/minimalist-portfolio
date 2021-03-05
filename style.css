@@ -132,7 +132,7 @@ li {
 }
 .description {
   align-self: flex-end;
-  height: 25%;
+  height: fit-content;
   width: 100%;
   background-color: var(--lightDust);
   border-top: 0.5px solid var(--textColor);
@@ -325,7 +325,6 @@ li {
   }
   .description {
     align-self: flex-end;
-    height: 25%;
     width: 100%;
     background-color: var(--lightDust);
     border-top: 0.5px solid var(--textColor);
